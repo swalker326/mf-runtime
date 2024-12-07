@@ -2,12 +2,7 @@ import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
-
-import {
-	init,
-	loadRemote,
-	loadShare,
-} from "@module-federation/enhanced/runtime";
+import { init } from "@module-federation/enhanced/runtime";
 
 init({
 	name: "host",
